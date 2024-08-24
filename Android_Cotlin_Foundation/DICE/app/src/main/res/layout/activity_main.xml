@@ -27,19 +27,23 @@
         
     </LinearLayout>
 
+    <!-- 전체 weight 는 2 이고 이를 반반씩 쪼개서 사용 -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="200dp"
+        android:weightSum="2">
 
         <ImageView
             android:src="@drawable/dice_1"
             android:layout_width="120dp"
-            android:layout_height="120dp"/>
+            android:layout_height="120dp"
+            android:layout_weight="1"/>
 
         <ImageView
             android:src="@drawable/dice_2"
             android:layout_width="120dp"
-            android:layout_height="120dp"/>
+            android:layout_height="120dp"
+            android:layout_weight="1"/>
 
     </LinearLayout>
 
